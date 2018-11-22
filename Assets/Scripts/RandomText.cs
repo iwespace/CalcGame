@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RandomText : MonoBehaviour {
+public class RandomText : MonoBehaviour
+{
 
+    [Header("UI")]
     [SerializeField]
-    private Text text;
+    private Text randomText1;
+    [SerializeField]
+    private Text randomText2;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 
-        var randomNumber = Random.Range(0, 10);
-        randomNumber += 1;
-        text.text = "Random : " + randomNumber.ToString();
+        var randomNumber1 = Random.Range(0, 10);
+        randomNumber1 += 1;
+        var randomNumber2 = Random.Range(0, 10);
+        randomNumber2 += 1;
+
+        randomText1.text = randomNumber1.ToString();
+        randomText2.text = randomNumber2.ToString();
 
     }
 	
