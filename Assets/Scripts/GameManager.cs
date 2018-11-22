@@ -5,8 +5,12 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Button Ans = null;
+    public Button AnsPlusBtn = null;
+    public Button AnsMinusBtn = null;
     [SerializeField]
     private RandomText randomText;
+
 
     public void OnAnsClick(Text buttonText)
     {
@@ -18,4 +22,20 @@ public class GameManager : MonoBehaviour
     {
         return randomText.Answer == value;
     }
+
+
+	// Use this for initialization
+	void Start () {
+        int pos = Random.Range(-600, 600);
+        Vector3 Vpos = new Vector3(pos, pos);
+        Ans.transform.position = Vpos;
+        AnsPlusBtn.transform.position = Vpos;
+        AnsMinusBtn.transform.position = Vpos;
+    }
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
 }
