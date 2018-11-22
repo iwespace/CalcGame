@@ -14,6 +14,13 @@ public class RandomText : MonoBehaviour
 
     public int RandomNumber1 { get; private set; }
     public int RandomNumber2 { get; private set; }
+    public int Answer
+    {
+        get
+        {
+            return RandomNumber1 + RandomNumber2;
+        }
+    }
 
     // Use this for initialization
     void Awake () {

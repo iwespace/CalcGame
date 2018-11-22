@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 265730850}
   - component: {fileID: 265730849}
   - component: {fileID: 265730848}
+  - component: {fileID: 265730854}
   - component: {fileID: 265730852}
   - component: {fileID: 265730853}
   m_Layer: 5
@@ -468,6 +469,18 @@ MonoBehaviour:
   Ans: {fileID: 1152859700}
   AnsPlus: {fileID: 21519202}
   AnsMinus: {fileID: 739463568}
+  randomText: {fileID: 265730852}
+--- !u!114 &265730854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265730847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123c4440006a7be4b8782a223e9ddba1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   randomText: {fileID: 265730852}
 --- !u!1 &375593976
 GameObject:
@@ -672,7 +685,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 433584497}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 265730854}
+        m_MethodName: OnAnsClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1152859700}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &433584497
@@ -859,7 +883,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 942449195}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 265730854}
+        m_MethodName: OnAnsClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 739463568}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &942449195
@@ -1196,7 +1231,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1914609377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 265730854}
+        m_MethodName: OnAnsClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21519202}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1914609377
