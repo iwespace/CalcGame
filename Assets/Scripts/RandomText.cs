@@ -12,16 +12,19 @@ public class RandomText : MonoBehaviour
     [SerializeField]
     private Text randomText2;
 
+    public int RandomNumber1 { get; private set; }
+    public int RandomNumber2 { get; private set; }
+
     // Use this for initialization
     void Start () {
 
-        var randomNumber1 = Random.Range(0, 10);
-        randomNumber1 += 1;
-        var randomNumber2 = Random.Range(0, 10);
-        randomNumber2 += 1;
+        RandomNumber1 = Random.Range(0, 10);
+        RandomNumber1 += 1;
+        RandomNumber2 = Random.Range(0, 10);
+        RandomNumber2 += 1;
 
-        randomText1.text = randomNumber1.ToString();
-        randomText2.text = randomNumber2.ToString();
+        randomText1.text = RandomNumber1.ToString();
+        randomText2.text = RandomNumber2.ToString();
 
     }
 	
