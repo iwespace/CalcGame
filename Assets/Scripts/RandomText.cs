@@ -16,7 +16,7 @@ public class RandomText : MonoBehaviour
     public int RandomNumber2 { get; private set; }
 
     // Use this for initialization
-    void Start () {
+    void Awake () {
 
         RandomNumber1 = Random.Range(0, 10);
         RandomNumber1 += 1;
